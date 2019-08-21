@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #fcfcfc;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.form {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  padding: 1rem;
+  background: #fff;
+}
+.form-btn {
+  overflow:hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.todo-form-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-size: 2rem;
+  margin-bottom:0.5rem;
+  
+}
+.todo-form-message {
+  padding:1rem;
+  height:10rem;
+  width:100%;
+  border:1px solid #ddd;
+  resize: vertical;
+  font-family:sans-serif;
+}
+.todo-form-button, .todo-form-button-remove {
+  padding: 0.8rem 4rem;
+  background: #4682B4;
+  color:#fff;
+  margin: 1rem 0;
+  border:0;
+  border-radius: 0.3rem;
+  transition:0.4s all;
+  cursor: pointer;
+  font-weight: bold;
+}
+.todo-form-button:hover, .todo-form-button-remove:hover {
+  background: #0E4D92;
+}
+
+
+
+
+/* Task List */
+
+.todo-list-container {
+  background: #fff;
+  font-family:sans-serif;
+  margin:1rem 0;
+  border:1px solid #ddd;
+  padding:1rem 2rem;
+}
+.todo-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-list-search-form {
+  width:50%;
+}
+.todo-list-search {
+  border:1px solid #ddd;
+  padding:0.5rem;
+  width: 80%;
+}
+.todo-list-title {
+  margin-top:0;
+  margin-bottom:0;
+  font-size:1rem;
+  text-transform: uppercase;
+}
+
+.todo-element {
+  border-top:1px solid #ddd;
+  margin-top:1rem;
+  padding-top:2rem;
+  padding-bottom: 2rem;
+}
+.todo-element-bar {
+  overflow:hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-element-date {
+  margin:0;
+}
+.todo-element-date {
+  font-size:0.9rem;
+  font-weight: normal;
+}
+.todo-element-delete, .todo-element-edit, .todo-element-save {
+  padding: 0.8rem 1.6rem;
+    background: #4682B4;
+    color: #fff;
+    border: 0;
+    border-radius: 0.188rem;
+    transition: 0.4s all;
+    cursor: pointer;
+    float: right;
+}
+
+.todo-element-delete:hover, .todo-element-edit:hover, .todo-element-save:hover {
+  background: #0E4D92;
+}
+
+
+.todo-checkbox{
+  display: inline-block;
+  padding: 0;
+  margin-right: 0.5rem;
+}
+
+.todo-element-text {
+  display: inline-block;
+  color:#777;
+  font-size:1rem;
+  line-height: 1.5rem;
+}
+
+.todo-done{
+  text-decoration: line-through;
+}
